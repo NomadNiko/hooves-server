@@ -42,8 +42,19 @@ const infrastructureDatabaseModule = (databaseConfig() as DatabaseConfig)
     });
 // </database-block>
 
+import { DriverLocationModule } from './driver-location/driver-location.module';
+import { DriverProfilesModule } from './driver-profiles/driver-profiles.module';
+
+import { RidesModule } from './rides/rides.module';
+
+import { RideLocationsModule } from './ride-locations/ride-locations.module';
+
 @Module({
   imports: [
+    RideLocationsModule,
+    RidesModule,
+    DriverProfilesModule,
+    DriverLocationModule,
     ConfigModule.forRoot({
       isGlobal: true,
       load: [
