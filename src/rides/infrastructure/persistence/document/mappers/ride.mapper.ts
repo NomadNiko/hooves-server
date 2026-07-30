@@ -19,6 +19,14 @@ export class RideMapper {
 
     domainEntity.pickup = raw.pickup;
 
+    domainEntity.pickupLat = raw.pickupLat;
+
+    domainEntity.pickupLng = raw.pickupLng;
+
+    domainEntity.dropoffLat = raw.dropoffLat;
+
+    domainEntity.dropoffLng = raw.dropoffLng;
+
     domainEntity.riderName = raw.riderName;
 
     domainEntity.riderId = raw.riderId;
@@ -45,6 +53,14 @@ export class RideMapper {
     persistenceSchema.dropoff = domainEntity.dropoff;
 
     persistenceSchema.pickup = domainEntity.pickup;
+
+    persistenceSchema.pickupLat = domainEntity.pickupLat;
+
+    persistenceSchema.pickupLng = domainEntity.pickupLng;
+
+    persistenceSchema.dropoffLat = domainEntity.dropoffLat;
+
+    persistenceSchema.dropoffLng = domainEntity.dropoffLng;
 
     persistenceSchema.riderName = domainEntity.riderName;
 

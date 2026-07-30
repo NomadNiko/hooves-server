@@ -48,6 +48,26 @@ export class RideSchemaClass extends EntityDocumentHelper {
   pickup: string;
 
   @Prop({
+    type: Number,
+  })
+  pickupLat?: number | null;
+
+  @Prop({
+    type: Number,
+  })
+  pickupLng?: number | null;
+
+  @Prop({
+    type: Number,
+  })
+  dropoffLat?: number | null;
+
+  @Prop({
+    type: Number,
+  })
+  dropoffLng?: number | null;
+
+  @Prop({
     type: String,
   })
   riderName?: string | null;

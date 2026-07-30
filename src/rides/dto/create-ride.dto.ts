@@ -69,6 +69,38 @@ export class CreateRideDto {
 
   @ApiProperty({
     required: false,
+    type: () => Number,
+  })
+  @IsOptional()
+  @IsNumber()
+  pickupLat?: number | null;
+
+  @ApiProperty({
+    required: false,
+    type: () => Number,
+  })
+  @IsOptional()
+  @IsNumber()
+  pickupLng?: number | null;
+
+  @ApiProperty({
+    required: false,
+    type: () => Number,
+  })
+  @IsOptional()
+  @IsNumber()
+  dropoffLat?: number | null;
+
+  @ApiProperty({
+    required: false,
+    type: () => Number,
+  })
+  @IsOptional()
+  @IsNumber()
+  dropoffLng?: number | null;
+
+  @ApiProperty({
+    required: false,
     type: () => String,
   })
   @IsOptional()

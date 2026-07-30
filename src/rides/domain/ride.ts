@@ -44,6 +44,30 @@ export class Ride {
   pickup: string;
 
   @ApiProperty({
+    type: () => Number,
+    nullable: true,
+  })
+  pickupLat?: number | null;
+
+  @ApiProperty({
+    type: () => Number,
+    nullable: true,
+  })
+  pickupLng?: number | null;
+
+  @ApiProperty({
+    type: () => Number,
+    nullable: true,
+  })
+  dropoffLat?: number | null;
+
+  @ApiProperty({
+    type: () => Number,
+    nullable: true,
+  })
+  dropoffLng?: number | null;
+
+  @ApiProperty({
     type: () => String,
     nullable: true,
   })
